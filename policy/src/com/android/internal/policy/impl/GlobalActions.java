@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2008 The Android Open Source Project
+ * Copyright (C) 2011 David van Tonder
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -179,7 +180,26 @@ class GlobalActions implements DialogInterface.OnDismissListener, DialogInterfac
                 }
             });
 
-        // next: airplane mode
+        // second: reboot
+        mItems.add(
+            new SinglePressAction(
+                    com.android.internal.R.drawable.ic_lock_reboot,
+                    R.string.global_action_reboot) {
+
+                public void onPress() {
+                    	ShutdownThread.reboot(mContext, "null", true);
+                }
+
+                public boolean showDuringKeyguard() {
+                        return true;
+                }
+
+                public boolean showBeforeProvisioning() {
+                        return true;
+                }
+            });
+
+        // third: airplane mode
         mItems.add(mAirplaneModeOn);
 
         // last: silent mode

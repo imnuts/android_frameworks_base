@@ -361,6 +361,9 @@
     <!-- Reboot recovery option -->
     <string name="global_action_reboot_bootloader">Bootloader</string>
 
+    <!-- label for item that screenshots in phone options dialog -->
+    <string name="global_action_screenshot">Screenshot</string>
+
     <!-- label for item that enables silent mode in phone options dialog -->
     <string name="global_action_toggle_silent_mode">Silent mode</string>
 

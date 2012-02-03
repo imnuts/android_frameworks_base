@@ -1825,4 +1825,7 @@
 
   <!-- Screenshot -->
   <java-symbol type="string" name="global_action_screenshot" />
+
+  <!-- Keyboard Workaround -->
+  <java-symbol type="bool" name="config_forceDisableHardwareKeyboard" />
 </resources>

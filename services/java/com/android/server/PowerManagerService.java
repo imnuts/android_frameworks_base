@@ -1713,8 +1713,6 @@ public class PowerManagerService extends IPowerManager.Stub
                     mLightSensorValue = -1;
                     // reset our highest light sensor value when the screen turns off
                     mHighestLightSensorValue = -1;
-                    lightFilterStop();
-                    resetLastLightValues();
                 }
                 else if (!mAutoBrightessEnabled && SystemProperties.getBoolean(
                     "ro.hardware.respect_als", false)) {

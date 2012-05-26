@@ -456,10 +456,9 @@ public class PhoneStatusBar extends StatusBar {
     };
 
     private void prepareNavigationBarView() {
-        mNavigationBarView.reorient();
-
         mNavigationBarView.getRecentsButton().setOnClickListener(mRecentsClickListener);
         mNavigationBarView.getRecentsButton().setOnTouchListener(mRecentsPanel);
+        mNavigationBarView.reorient();
     }
 
     // For small-screen devices (read: phones) that lack hardware navigation buttons

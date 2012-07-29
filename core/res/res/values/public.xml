@@ -802,6 +802,7 @@
   <java-symbol type="string" name="shutdown_confirm" />
   <java-symbol type="string" name="shutdown_confirm_question" />
   <java-symbol type="string" name="shutdown_progress" />
+  <java-symbol type="string" name="reboot_progress" />
   <java-symbol type="string" name="sim_added_message" />
   <java-symbol type="string" name="sim_added_title" />
   <java-symbol type="string" name="sim_removed_message" />
@@ -1326,6 +1327,7 @@
   <java-symbol type="string" name="android_upgrading_title" />
   <java-symbol type="string" name="faceunlock_multiple_failures" />
   <java-symbol type="string" name="global_action_power_off" />
+  <java-symbol type="string" name="global_action_reboot" />
   <java-symbol type="string" name="global_actions_airplane_mode_off_status" />
   <java-symbol type="string" name="global_actions_airplane_mode_on_status" />
   <java-symbol type="string" name="global_actions_toggle_airplane_mode" />
@@ -1369,7 +1371,6 @@
   <java-symbol type="string" name="lockscreen_too_many_failed_pin_attempts_dialog_message" />
   <java-symbol type="string" name="lockscreen_unlock_label" />
   <java-symbol type="string" name="status_bar_device_locked" />
-  <java-symbol type="string" name="reboot" />
   <java-symbol type="style" name="Animation.LockScreen" />
   <java-symbol type="style" name="Theme.Dialog.RecentApplications" />
   <java-symbol type="style" name="Theme.ExpandedMenu" />
@@ -1547,7 +1548,6 @@
   <java-symbol type="string" name="vpn_title" />
   <java-symbol type="string" name="vpn_title_long" />
   <java-symbol type="string" name="wallpaper_binding_label" />
-  <java-symbol type="string" name="reboot_progress" />
   <java-symbol type="style" name="Theme.Dialog.AppError" />
   <java-symbol type="style" name="Theme.Toast" />
   <java-symbol type="xml" name="storage_list" />

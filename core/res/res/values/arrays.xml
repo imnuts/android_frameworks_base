@@ -417,5 +417,7 @@
     <string-array name="reboot_values">
 		<item></item>
 		<item>recovery</item>
+		<item>bootloader</item>
+		<item>download</item>
     </string-array>
 </resources>

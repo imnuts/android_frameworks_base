@@ -231,7 +231,7 @@ class GlobalActions implements DialogInterface.OnDismissListener, DialogInterfac
         mItems.add(
                 new SinglePressAction(
                         com.android.internal.R.drawable.ic_lock_reboot,
-                        com.android.internal.R.string.reboot) {
+                        com.android.internal.R.string.global_action_reboot) {
 
                     @Override
                     public boolean showDuringKeyguard() {
@@ -862,7 +862,7 @@ class GlobalActions implements DialogInterface.OnDismissListener, DialogInterfac
                                 dialog.dismiss();
                             }
                         })
-                .setPositiveButton(R.string.reboot, new DialogInterface.OnClickListener() {
+                .setPositiveButton(R.string.global_action_reboot, new DialogInterface.OnClickListener() {
 
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

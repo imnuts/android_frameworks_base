@@ -302,6 +302,9 @@
     <!-- Shutdown Progress Dialog. This is shown if the user chooses to power off the phone. -->
     <string name="shutdown_progress">Shutting down\u2026</string>
 
+    <!-- Rebooting message -->
+    <string name="reboot_progress">Your device is rebooting</string>
+
     <!-- Shutdown Confirmation Dialog.  When the user chooses to power off the phone, there will
          be a confirmation dialog.  This is the message. -->
     <string name="shutdown_confirm" product="tablet">Your tablet will shut down.</string>
@@ -345,6 +348,18 @@
 
     <!-- label for item that turns off power in phone options dialog -->
     <string name="global_action_power_off">Power off</string>
+
+    <!-- Reboot -->
+    <string name="global_action_reboot">Reboot</string>
+
+    <!-- Reboot recovery option -->
+    <string name="global_action_reboot_recovery">Recovery</string>
+
+    <!-- Reboot recovery option -->
+    <string name="global_action_reboot_download">Download</string>
+
+    <!-- Reboot recovery option -->
+    <string name="global_action_reboot_bootloader">Bootloader</string>
 
     <!-- label for item that enables silent mode in phone options dialog -->
     <string name="global_action_toggle_silent_mode">Silent mode</string>
@@ -3576,19 +3591,4 @@
 
     <!-- "Done" button for MediaRouter chooser dialog when grouping routes. [CHAR LIMIT=NONE] -->
     <string name="media_route_chooser_grouping_done">Done</string>
-
-    <!-- Reboot -->
-    <string name="reboot">Reboot</string>
-
-    <!-- Reboot recovery option -->
-    <string name="reboot_recovery">Recovery</string>
-
-    <!-- Reboot recovery option -->
-    <string name="reboot_download">Download</string>
-
-    <!-- Reboot recovery option -->
-    <string name="reboot_bootloader">Bootloader</string>
-
-    <!-- Rebooting message -->
-    <string name="reboot_progress">Your device is rebooting</string>
 </resources>

@@ -409,8 +409,10 @@
 
     <!-- reboot options -->
     <string-array name="reboot_options">
-		<item>@string/reboot</item>
-		<item>@string/reboot_recovery</item>
+		<item>@string/global_action_reboot</item>
+		<item>@string/global_action_reboot_recovery</item>
+		<item>@string/global_action_reboot_bootloader</item>
+		<item>@string/global_action_reboot_download</item>
     </string-array>
 
     <!-- reboot values -->

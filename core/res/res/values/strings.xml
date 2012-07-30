@@ -349,16 +349,16 @@
     <!-- label for item that turns off power in phone options dialog -->
     <string name="global_action_power_off">Power off</string>
 
-    <!-- Reboot -->
+    <!-- label for item that reboots the phone in phone options dialog -->
     <string name="global_action_reboot">Reboot</string>
 
-    <!-- Reboot recovery option -->
+    <!-- label for item that reboots the phone to recovery in phone options dialog -->
     <string name="global_action_reboot_recovery">Recovery</string>
 
-    <!-- Reboot recovery option -->
+    <!-- label for item that reboots the phone to download in phone options dialog -->
     <string name="global_action_reboot_download">Download</string>
 
-    <!-- Reboot recovery option -->
+    <!-- label for item that reboots the phone to bootloader in phone options dialog -->
     <string name="global_action_reboot_bootloader">Bootloader</string>
 
     <!-- label for item that screenshots in phone options dialog -->

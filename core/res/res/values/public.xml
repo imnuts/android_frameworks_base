@@ -802,6 +802,7 @@
   <java-symbol type="string" name="shutdown_confirm" />
   <java-symbol type="string" name="shutdown_confirm_question" />
   <java-symbol type="string" name="shutdown_progress" />
+  <java-symbol type="string" name="reboot_system" />
   <java-symbol type="string" name="reboot_progress" />
   <java-symbol type="string" name="sim_added_message" />
   <java-symbol type="string" name="sim_added_title" />
@@ -1204,7 +1205,7 @@
   <java-symbol type="array" name="lockscreen_targets_when_soundon" />
   <java-symbol type="array" name="lockscreen_targets_with_camera" />
   <java-symbol type="array" name="reboot_options" />
-  <java-symbol type="array" name="reboot_values" />
+  <java-symbol type="array" name="reboot_actions" />
   <java-symbol type="attr" name="actionModePopupWindowStyle" />
   <java-symbol type="attr" name="dialogCustomTitleDecorLayout" />
   <java-symbol type="attr" name="dialogTitleDecorLayout" />
@@ -1327,6 +1328,7 @@
   <java-symbol type="string" name="abbrev_wday_month_day_no_year" />
   <java-symbol type="string" name="android_upgrading_title" />
   <java-symbol type="string" name="faceunlock_multiple_failures" />
+  <java-symbol type="string" name="global_actions" />
   <java-symbol type="string" name="global_action_power_off" />
   <java-symbol type="string" name="global_action_reboot" />
   <java-symbol type="string" name="global_actions_airplane_mode_off_status" />

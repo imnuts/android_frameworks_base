@@ -102,8 +102,6 @@ class GlobalActions implements DialogInterface.OnDismissListener, DialogInterfac
 
     private IWindowManager mIWindowManager;
 
-    private static int rebootIndex = 0;
-
     /**
      * @param context everything needs a context :(
      */

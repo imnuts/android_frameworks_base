@@ -24,7 +24,6 @@ import android.content.IntentFilter;
 import android.content.res.Resources;
 import android.database.ContentObserver;
 import android.net.Uri;
-import android.net.wimax.WimaxHelper;
 import android.os.Handler;
 import android.provider.Settings;
 import android.util.AttributeSet;
@@ -51,7 +50,8 @@ public class PowerWidget extends FrameLayout {
     private static final String BUTTONS_DEFAULT = PowerButton.BUTTON_WIFI
                              + BUTTON_DELIMITER + PowerButton.BUTTON_BLUETOOTH
                              + BUTTON_DELIMITER + PowerButton.BUTTON_GPS
-                             + BUTTON_DELIMITER + PowerButton.BUTTON_SOUND;
+                             + BUTTON_DELIMITER + PowerButton.BUTTON_AUTOROTATE
+                             + BUTTON_DELIMITER + PowerButton.BUTTON_BRIGHTNESS;
 
     private static final FrameLayout.LayoutParams WIDGET_LAYOUT_PARAMS = new FrameLayout.LayoutParams(
                                         ViewGroup.LayoutParams.MATCH_PARENT, // width = match_parent
@@ -75,22 +75,7 @@ public class PowerWidget extends FrameLayout {
         sPossibleButtons.put(PowerButton.BUTTON_GPS, GPSButton.class);
         sPossibleButtons.put(PowerButton.BUTTON_BLUETOOTH, BluetoothButton.class);
         sPossibleButtons.put(PowerButton.BUTTON_BRIGHTNESS, BrightnessButton.class);
-        sPossibleButtons.put(PowerButton.BUTTON_SOUND, SoundButton.class);
-        sPossibleButtons.put(PowerButton.BUTTON_SYNC, SyncButton.class);
-        sPossibleButtons.put(PowerButton.BUTTON_WIFIAP, WifiApButton.class);
-        sPossibleButtons.put(PowerButton.BUTTON_SCREENTIMEOUT, ScreenTimeoutButton.class);
-        sPossibleButtons.put(PowerButton.BUTTON_MOBILEDATA, MobileDataButton.class);
-        sPossibleButtons.put(PowerButton.BUTTON_LOCKSCREEN, LockScreenButton.class);
-        sPossibleButtons.put(PowerButton.BUTTON_NETWORKMODE, NetworkModeButton.class);
         sPossibleButtons.put(PowerButton.BUTTON_AUTOROTATE, AutoRotateButton.class);
-        sPossibleButtons.put(PowerButton.BUTTON_AIRPLANE, AirplaneButton.class);
-        sPossibleButtons.put(PowerButton.BUTTON_FLASHLIGHT, FlashlightButton.class);
-        sPossibleButtons.put(PowerButton.BUTTON_SLEEP, SleepButton.class);
-        sPossibleButtons.put(PowerButton.BUTTON_MEDIA_PLAY_PAUSE, MediaPlayPauseButton.class);
-        sPossibleButtons.put(PowerButton.BUTTON_MEDIA_PREVIOUS, MediaPreviousButton.class);
-        sPossibleButtons.put(PowerButton.BUTTON_MEDIA_NEXT, MediaNextButton.class);
-        sPossibleButtons.put(PowerButton.BUTTON_WIMAX, WimaxButton.class);
-        sPossibleButtons.put(PowerButton.BUTTON_LTE, LTEButton.class);
     }
 
     // this is a list of our currently loaded buttons
@@ -174,10 +159,6 @@ public class PowerWidget extends FrameLayout {
         if (buttons == null) {
             Log.i(TAG, "Default buttons being loaded");
             buttons = BUTTONS_DEFAULT;
-            // Add the WiMAX button if it's supported
-            if (WimaxHelper.isWimaxSupported(mContext)) {
-                buttons += BUTTON_DELIMITER + PowerButton.BUTTON_WIMAX;
-            }
         }
         Log.i(TAG, "Button list: " + buttons);
 

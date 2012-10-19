@@ -831,7 +831,7 @@
     <integer name="config_ntpTimeout">20000</integer>
 
     <!-- Default network policy warning threshold, in megabytes. -->
-    <integer name="config_networkPolicyDefaultWarning">2048</integer>
+    <integer name="config_networkPolicyDefaultWarning">5120</integer>
 
     <!-- Set and Unsets WiMAX -->
     <bool name="config_wimaxEnabled">false</bool>

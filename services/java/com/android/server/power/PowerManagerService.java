@@ -1827,7 +1827,7 @@ public final class PowerManagerService extends IPowerManager.Stub
                     if (shutdown) {
                         ShutdownThread.shutdown(mContext, confirm);
                     } else {
-                        ShutdownThread.reboot(mContext, reason, confirm);
+                        ShutdownThread.reboot(mContext, confirm);
                     }
                 }
             }

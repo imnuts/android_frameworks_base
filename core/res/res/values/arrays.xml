@@ -419,4 +419,21 @@
         <item>TUV</item><!-- 8 -->
         <item>WXYZ</item><!-- 9 -->
     </string-array>
+
+    <!-- Defines the shutdown options shown in the reboot dialog. -->
+    <string-array name="reboot_options" translatable="false">
+        <item>@string/global_action_reboot</item>
+        <item>@string/global_action_reboot_recovery</item>
+        <item>@string/global_action_reboot_bootloader</item>
+        <item>@string/global_action_reboot_download</item>
+    </string-array>
+    
+    <!-- Do not translate. Defines the shutdown actions passed to the kernel.
+         The first item should be empty for regular reboot. -->
+    <string-array name="reboot_actions" translatable="false">
+        <item></item>
+        <item>recovery</item>
+        <item>bootloader</item>
+        <item>download</item>
+    </string-array>
 </resources>

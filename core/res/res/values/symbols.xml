@@ -1813,4 +1813,13 @@
   <!-- From PinyinIME(!!!) -->
   <java-symbol type="string" name="inputMethod" />
 
+  <!-- Reboot Options -->
+  <java-symbol type="array" name="reboot_options" />
+  <java-symbol type="array" name="reboot_actions" />
+  <java-symbol type="string" name="reboot_progress" />
+  <java-symbol type="string" name="reboot_system" />
+  <java-symbol type="string" name="global_action_reboot" />
+  <java-symbol type="string" name="global_action_reboot_bootloader" />
+  <java-symbol type="string" name="global_action_reboot_download" />
+  <java-symbol type="string" name="global_action_reboot_recovery" />
 </resources>

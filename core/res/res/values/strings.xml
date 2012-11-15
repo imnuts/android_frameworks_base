@@ -315,6 +315,16 @@
          power off dialog instead of the global actions menu. -->
     <string name="shutdown_confirm_question">Do you want to shut down?</string>
 
+    <!-- Reboot Progress Dialog. This is shown if the user chooses to reboot the phone. -->
+    <string name="reboot_progress">Rebooting\u2026</string>
+
+    <!-- Reboot Confirmation Dialog.  When the user chooses to reboot the phone, there will
+         be a confirmation dialog.  This is the message. -->
+    <string name="reboot_confirm" product="tablet">Your tablet will reboot.</string>
+    <!-- Reboot Confirmation Dialog.  When the user chooses to reboot the phone, there will
+         be a confirmation dialog.  This is the message. -->
+    <string name="reboot_confirm" product="default">Your phone will reboot.</string>
+
     <!-- Title of dialog to confirm rebooting into safe mode. [CHAR LIMIT=50] -->
     <string name="reboot_safemode_title">Reboot to safe mode</string>
 
@@ -345,7 +355,24 @@
 
     <!-- label for item that turns off power in phone options dialog -->
     <string name="global_action_power_off">Power off</string>
+    
+    <!-- label for item that reboots the phone in phone options dialog -->
+    <string name="global_action_reboot">Reboot</string>
 
+    <!-- label for item that reboots the phone to recovery in phone options dialog -->
+    <string name="global_action_reboot_recovery">Recovery</string>
+
+    <!-- label for item that reboots the phone to download in phone options dialog -->
+    <string name="global_action_reboot_download">Download</string>
+
+    <!-- label for item that reboots the phone to bootloader in phone options dialog -->
+    <string name="global_action_reboot_bootloader">Bootloader</string>
+
+    <!-- Button to reboot the phone, within the Phone Options dialog -->
+    <string name="reboot_system" product="tablet">Reboot tablet</string>
+    <string name="reboot_system" product="default">Reboot phone</string>
+    <!-- Reboot Progress Dialog. This is shown if the user chooses to reboot the phone. -->
+    
     <!-- label for item that generates a bug report in the phone options dialog -->
     <string name="global_action_bug_report">Bug report</string>
 

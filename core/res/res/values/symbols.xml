@@ -1822,4 +1822,7 @@
   <java-symbol type="string" name="global_action_reboot_bootloader" />
   <java-symbol type="string" name="global_action_reboot_download" />
   <java-symbol type="string" name="global_action_reboot_recovery" />
+
+  <!-- Screenshot -->
+  <java-symbol type="string" name="global_action_screenshot" />
 </resources>
